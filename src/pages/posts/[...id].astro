@@ -72,14 +72,14 @@ const { Content, headings, remarkPluginFrontmatter } = await render(post);
 
           <div class="flex justify-between mt-6 py-6 border-t border-[--secondary-bg]">
             {prevPost ? (
-            <a class="p-3 border border-[--secondary-bg] rounded-lg" href={"/posts/" + prevPost.id}>
+            <a class="p-3 border border-[--secondary-bg] rounded-lg bg-[--primary-bg-transparent-60] hover:bg-[--primary-color] text-[--second-text-color] hover:text-[--primary-bg] transition-all transform hover:scale-105" href={"/posts/" + prevPost.id}>
                 <i class="fa-regular fa-angle-left"></i>
                 {prevPost.data.title}
               </a>
             ) : <div></div>
             }
             {nextPost ? (
-            <a class="p-3 border border-[--secondary-bg] rounded-lg" href={"/posts/" + nextPost.id}>
+            <a class="p-3 border border-[--secondary-bg] rounded-lg bg-[--primary-bg-transparent-60] hover:bg-[--primary-color] text-[--second-text-color] hover:text-[--primary-bg] transition-all transform hover:scale-105" href={"/posts/" + nextPost.id}>
               {nextPost.data.title}
               <i class="fa-regular fa-angle-right"></i>
             </a>
