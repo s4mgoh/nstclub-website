@@ -62,13 +62,15 @@ import TypedWrapper from "@components/TypedWrapper.vue";
               <div class="event top-0 bottom-0 left-5" data-date={event.date.toLocaleDateString("en-US", { month: "short", day: "numeric" })}>
                 {
                 event.link
-                      ? <a href={event.link}>
+                      ? 
+                      <a href={event.link} class={event.type}>
                   {event.name}
                   <i class="ml-1 fa-regular fa-arrow-up-right-from-square"></i>
                 </a>
-                : event.name
+                :
+                <span class={event.type}>{event.name}</span>
                 }
-                <div class={"rank " + event.type}>
+                <div class={"rank" /* + event.type */}>
                   {event.rank}
                 </div>
               </div>
@@ -210,14 +212,6 @@ document.addEventListener("astro:page-load", () => {
   }
 }
 
-.test-type-1 {
-  color: gold;
-}
-
-.test-type-2 {
-  color: gold;
-}
-
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -233,4 +227,26 @@ document.addEventListener("astro:page-load", () => {
 [data-left-button]:hover, [data-right-button]:hover {
   transform: scale(1.05);
 }
+
+/* Styling for event names below*/
+.intro-to-digi-scam-webinar {
+  color: var(--third-text-color);
+}
+
+.ignite-2022-cyber-warrior {
+  color: var(--third-text-color);
+}
+
+.cyber-sec-digi-scam-awareness-webinar-1 {
+  color: var(--third-text-color);
+}
+
+.cyber-sec-digi-scam-awareness-webinar-2 {
+  color: var(--third-text-color);
+}
+
+.reverse-shell-gym-session {
+  color: var(--third-text-color);
+}
+
 </style>
