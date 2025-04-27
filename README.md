@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/s4mgoh/nstclub-website/main/public/assets/nstclub-logo.png">
+<img src="https://github.com/s4mgoh/nstclub-website/main/public/assets/nstclub-logo.png">
 
 # [iteccnstclub.com](https://iteccnstclub.com)
 
