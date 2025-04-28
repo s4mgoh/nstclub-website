@@ -434,3 +434,8 @@ a:hover {
         justify-content: center;
     }
 }
+
+.club-motto {
+    color: var(--third-text-color);
+    font-size: 20px;
+}
